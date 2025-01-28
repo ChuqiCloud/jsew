@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>CKY#JSEW</title>
+    <title>jsew</title>
     <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width,initial-scale=1,user-scalable=no" name="viewport" />
     <link rel="stylesheet" href="/gh/BigCoke233/textretty.css@master/textretty.min.css" />
@@ -21,25 +21,11 @@
         <div class="main">
             <main>
                 <div id="MainContent" class="textretty"></div>
-                <!-- <hr /> -->
-                <div id="detalk"></div>
                 <!-- <p style="text-align: center;"><code>Server: <span id="server">[ Loading ]</span></code></p> -->
             </main>
         </div>
     </div>
     <script src="/npm/marked@2.0.1/lib/marked.min.js"></script>
-    <script src="/npm/cky-noticejs@1/templates/client.min.js" server="https://noticejs.cky.im"></script>
-    <script src="/npm/@detalk/static@1/dist/detalk.js"></script>
-    <script>
-        detalk.init({
-            // 挂载点 (CSS 选择器)
-            el: "#detalk", // <div id="detalk"></div>
-            // 后端地址
-            url: "https://detalk-blog.deta.dev/",
-            // 当前页面的路径
-            path: 'JSEW',
-        });
-    </script>
     <script>
         const mcl = document.getElementById("MainContent");
         const loadMarkdown = (url) => {
