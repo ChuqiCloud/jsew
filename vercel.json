@@ -1,0 +1,10 @@
+{
+    "rewrites": [
+        { "source": "/gh/:match*", "destination": "/api/gh?file=:match*" },
+        { "source": "/npm/:match*", "destination": "/api/npm?file=:match*" },
+        { "source": "/cdnjs/:match*", "destination": "/api/cdnjs?file=:match*" },
+        { "source": "/wp/:match*", "destination": "/api/wp?file=:match*" },
+        
+        { "source": "/static/:match*", "destination": "/api/static?file=:match*" }
+    ]
+}
