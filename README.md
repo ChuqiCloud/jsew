@@ -12,7 +12,6 @@ JSEW 正在尝试与 jsDelivr API 兼容，匹配路径过程中出现任何问�
 
 ## Endpoint
 
-> 目前仅支持使用 `/gh` 和 `/npm`，并且自动开启 HTTPS 访问与 Gzip 压缩。
 
 ### GitHub
 
@@ -26,7 +25,6 @@ GitHub 文件来源于 `raw.githubusercontent.com`，将自动转换路径，API
 
 ```
 https://jsew.cky.codes/gh/detalkjs/client@master/dist/detalk.js
-https://s.cky.qystu.cc/gh/detalkjs/client@master/dist/detalk.js
 ```
 
 如果 `BRANCH_NAME` 未包含，则会默认为 `master` 分支。
@@ -43,7 +41,6 @@ NPM 文件来源于 `www.npmjs.com`，将自动转换路径并获取文件 Hex�
 
 ```
 https://jsew.cky.codes/npm/@detalk/static@1.2.1/dist/detalk.js
-https://s.cky.qystu.cc/npm/@detalk/static@1.2.1/dist/detalk.js
 ```
 
 当版本号为 `@latest` 时，将会自动 307 跳转至最新的版本号。
@@ -54,13 +51,39 @@ https://s.cky.qystu.cc/npm/@detalk/static@1.2.1/dist/detalk.js
 
 ```
 https://jsew.cky.codes/npm/@detalk/static@latest/dist/detalk.js
-https://s.cky.qystu.cc/npm/@detalk/static@latest/dist/detalk.js
 https://jsew.cky.codes/npm/@detalk/static@1/dist/detalk.js
-https://s.cky.qystu.cc/npm/@detalk/static@1/dist/detalk.js
 ```
 
 
 **即使不指定版本号，也必须指定 `@latest`，否则无法访问。**
+
+### cdnjs
+
+cdnjs 文件来源于 `cdnjs.cloudflare.com`，将自动转换路径，API 如下：
+
+```
+/cdnjs/[PACKAGE_NAME]@[VERSION]/[FILE]
+```
+
+例如：
+
+```
+https://jsew.cky.codes/cdnjs/jquery@3.6.0/dist/jquery.min.js
+```
+
+### wordpress
+
+WordPress 文件来源于 `cdn.jsdelivr.net`，API 如下：
+
+```
+/wp/[plugins|themes]/[PLUGIN_NAME|THEME_NAME]@[VERSION]/[FILE]
+```
+
+例如：
+
+```
+https://jsew.cky.codes/wp/plugins/wp-slimstat/tags/4.6.5/wp-slimstat.js
+```
 
 ## 自动压缩
 
@@ -83,7 +106,7 @@ https://s.cky.qystu.cc/npm/@detalk/static@1/dist/detalk.js
 
 ## TOS
 
-非常感谢您使用 CKY#JSEW 服务。
+非常感谢您使用 jsew 服务。
 
 此项目开发初衷是为了优化 jsDelivr 在中国大陆境内的访问，方便开发者存放 JavaScript, CSS 文件。
 
@@ -93,7 +116,7 @@ https://s.cky.qystu.cc/npm/@detalk/static@1/dist/detalk.js
 
 同时，此项目只支持为个人开发者的开源项目提供支持与服务，切勿用于商业服务中。
 
-CKY 对 `jsew.cky.codes` 与 `s.cky.qystu.cc` 的 SLA 不作任何保证，但其托管的平台均有较高的 SLA 支持。
+CKY 对 `jsew.cky.codes` 的 SLA 不作任何保证，但其托管的平台均有较高的 SLA 支持。
 
 感谢您对公益服务的支持！
 
