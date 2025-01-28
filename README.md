@@ -1,14 +1,14 @@
 # jsew
 
-> 此页面最后更新于 2023 年 3 月 9 日，**部分节点可能会对此页面有较长时间的缓存**。
+> 此页面最后更新于 2025 年 1 月 28 日，**部分节点可能会对此页面有较长时间的缓存**。
 
 ## 什么是 JSEW?
 
-JSEW 类似于 jsDelivr，从 GitHub 与 NPMJS 拉取文件并提供 CDN 加速。
+JSEW 类似于 jsDelivr，从 GitHub NPMJS CDNJS JSDWP 拉取文件并提供 CDN 加速。
 
 JSEW 正在尝试与 jsDelivr API 兼容，匹配路径过程中出现任何问题，请向我们反馈。
 
-> 如果对仓库封禁、路径匹配、仓库内容等有任何疑问和建议，请联系邮箱：`hi [at] cky.im`。
+> 如果对仓库封禁、路径匹配、仓库内容等有任何疑问和建议，请联系邮箱：`support [at] acmecloud.cn`。
 
 ## Endpoint
 
@@ -24,7 +24,7 @@ GitHub 文件来源于 `raw.githubusercontent.com`，将自动转换路径，API
 例如：
 
 ```
-https://jsew.cky.codes/gh/detalkjs/client@master/dist/detalk.js
+https://cdn.smartcis.cn/gh/detalkjs/client@master/dist/detalk.js
 ```
 
 如果 `BRANCH_NAME` 未包含，则会默认为 `master` 分支。
@@ -40,7 +40,7 @@ NPM 文件来源于 `www.npmjs.com`，将自动转换路径并获取文件 Hex�
 例如：
 
 ```
-https://jsew.cky.codes/npm/@detalk/static@1.2.1/dist/detalk.js
+https://cdn.smartcis.cn/npm/@detalk/static@1.2.1/dist/detalk.js
 ```
 
 当版本号为 `@latest` 时，将会自动 307 跳转至最新的版本号。
@@ -50,8 +50,8 @@ https://jsew.cky.codes/npm/@detalk/static@1.2.1/dist/detalk.js
 例如：
 
 ```
-https://jsew.cky.codes/npm/@detalk/static@latest/dist/detalk.js
-https://jsew.cky.codes/npm/@detalk/static@1/dist/detalk.js
+https://cdn.smartcis.cn/npm/@detalk/static@latest/dist/detalk.js
+https://cdn.smartcis.cn/npm/@detalk/static@1/dist/detalk.js
 ```
 
 
@@ -68,7 +68,7 @@ cdnjs 文件来源于 `cdnjs.cloudflare.com`，将自动转换路径，API 如�
 例如：
 
 ```
-https://jsew.cky.codes/cdnjs/jquery@3.6.0/dist/jquery.min.js
+https://cdn.smartcis.cn/cdnjs/jquery@3.6.0/dist/jquery.min.js
 ```
 
 ### wordpress
@@ -82,7 +82,7 @@ WordPress 文件来源于 `cdn.jsdelivr.net`，API 如下：
 例如：
 
 ```
-https://jsew.cky.codes/wp/plugins/wp-slimstat/tags/4.6.5/wp-slimstat.js
+https://cdn.smartcis.cn/wp/plugins/wp-slimstat/tags/4.6.5/wp-slimstat.js
 ```
 
 ## 自动压缩
@@ -96,13 +96,7 @@ https://jsew.cky.codes/wp/plugins/wp-slimstat/tags/4.6.5/wp-slimstat.js
 
 ## 域名
 
-为了优化来自中国大陆地区的访问，CKY#JSEW 新增多吉云节点。
-
-目前，`jsew.cky.codes` 建议作为回源域名，运行 Serverless Function.
-
-使用 `s.cky.qystu.cc` 替换 `fastly.jsdelivr.net`, `cdn.jsdelivr.net` 作为加速域名，此域已使用 DogeCloud + Gcore 加速。
-
-`jsew.cky.codes` 将会在 2023 年 8 月 27 日过期，我们将会尽快启用新的域名。
+使用 `cdn.smartcis.cn` 替换 `fastly.jsdelivr.net`, `cdn.jsdelivr.net` 作为加速域名，此域已使用 WAFPRO + 初星盾 加速。
 
 ## TOS
 
@@ -112,11 +106,13 @@ https://jsew.cky.codes/wp/plugins/wp-slimstat/tags/4.6.5/wp-slimstat.js
 
 所以，为了项目可以更好的运转，此服务原则上不支持为图片、字体、压缩包、视频、视频分片等文件加速。
 
-如果发现为以上类别的文件加速，则可能会封禁包名、封禁文件或是封禁用户名。
+如果发现为以上类别的文件加速，则可能会封禁包名、封禁文件或是封禁用户名。一般Jason懒得管，你要是太过分那就拉黑了。
 
 同时，此项目只支持为个人开发者的开源项目提供支持与服务，切勿用于商业服务中。
 
-CKY 对 `jsew.cky.codes` 的 SLA 不作任何保证，但其托管的平台均有较高的 SLA 支持。
+你要真商用，那就用吧。
+
+CKY 对 `cdn.smartcis.cn` 的 SLA 不作任何保证，但其托管的平台均有较高的 SLA 支持。
 
 感谢您对公益服务的支持！
 
