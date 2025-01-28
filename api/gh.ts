@@ -4,7 +4,7 @@ const mime = require('mime-types');
 const { minify } = require('terser');
 const uglifycss = require('uglifycss');
 const { ban } = require('../ban.js');
-const { cn } = require('../cn.js');
+
 // 导出一个默认的异步函数，用于处理请求和响应
 export default async function (req: VercelRequest, res: VercelResponse) {
     // 从请求的查询参数中获取文件名

@@ -6,7 +6,7 @@ const mime = require('mime-types');
 const { minify } = require('terser');
 const uglifycss = require('uglifycss');
 const { ban } = require('../ban.js');
-const { cn } = require('../cn.js');
+
 export default async function (req: VercelRequest, res: VercelResponse) {
     const { file } = req.query;
     if (!file) {

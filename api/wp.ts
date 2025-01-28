@@ -1,10 +1,13 @@
+/**
+ * jsew wordpress回源
+ * @copyright Acmecloud Group
+ */
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 const fetch = require('node-fetch');
 const mime = require('mime-types');
 const { minify } = require('terser');
 const uglifycss = require('uglifycss');
 const { ban } = require('../ban.js');
-const { cn } = require('../cn.js');
 
 // WordPress 官方 API 地址
 const WP_API = 'https://api.wordpress.org';

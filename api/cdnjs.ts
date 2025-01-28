@@ -1,3 +1,8 @@
+/**
+ * jsew cdnjs回源
+ * @copyright Acmecloud Group
+ */
+
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 const fetch = require('node-fetch');
 const mime = require('mime-types');
