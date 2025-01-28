@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "PolyForm Noncommercial License 1.0.0",
   "devDependencies": {
     "@vercel/node": "^2.8.4"
   },
