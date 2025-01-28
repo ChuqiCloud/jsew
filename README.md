@@ -4,6 +4,8 @@
 
 ## 什么是 JSEW?
 
+由Acmecloud Group 提供的公益静态文件分发，由初七云团队维护，WAFPRO 提供境内加速网络 初星盾提供全球加速网络。
+
 JSEW 类似于 jsDelivr，从 GitHub NPMJS CDNJS JSDWP 拉取文件并提供 CDN 加速。
 
 JSEW 正在尝试与 jsDelivr API 兼容，匹配路径过程中出现任何问题，请向我们反馈。
